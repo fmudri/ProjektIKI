@@ -4,9 +4,9 @@
                 >
                     <header class="text-center">
                         <h2 class="text-2xl font-bold uppercase mb-1">
-                            Login
+                            Prijava
                         </h2>
-                        <p class="mb-4">Log into your account to post gigs</p>
+                        <p class="mb-4">Prijavi se za objavu oglasa</p>
                     </header>
 
                     <form action="/users/authenticate" method="POST" >
@@ -33,7 +33,7 @@
                                 for="password"
                                 class="inline-block text-lg mb-2"
                             >
-                                Password
+                                Lozinka
                             </label>
                             <input
                                 type="password"
@@ -52,15 +52,15 @@
                                 type="submit"
                                 class="bg-laravel text-white rounded py-2 px-4 hover:bg-black"
                             >
-                                Sign In
+                                Prijava
                             </button>
                         </div>
 
                         <div class="mt-8">
                             <p>
-                                Don't have an account?
+                                Nemaš račun?
                                 <a href="/register" class="text-laravel"
-                                    >Register</a>
+                                    >Registracija</a>
                             </p>
                         </div>
                     </form>

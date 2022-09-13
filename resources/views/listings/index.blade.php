@@ -17,7 +17,7 @@
 @endforeach
 
 @else
-<p>No listings foun</p>
+<p>Nije pronađen niti jedan oglas...</p>
 @endunless
 </div>
 {{--Prikaz paginacije

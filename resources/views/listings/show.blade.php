@@ -3,7 +3,7 @@
 @include('partials._search')
 
 <a href="/" class="inline-block text-black ml-4 mb-4">
-    <i class="fa-solid fa-arrow-left"></i> Back
+    <i class="fa-solid fa-arrow-left"></i> Povratak
             </a>
             <div class="mx-4">
                 <!--Reffer to card.blade.php-->
@@ -28,7 +28,7 @@
                         <div class="border border-gray-200 w-full mb-6"></div>
                         <div>
                             <h3 class="text-3xl font-bold mb-4">
-                                Job description
+                                Opis posla
                             </h3>
                             <div class="text-lg space-y-6">
                                 {{$listing->description}}
@@ -37,15 +37,14 @@
                                     href="mailto:{{$listing->email}}"
                                     class="block bg-laravel text-white mt-6 py-2 rounded-xl hover:opacity-80"
                                     ><i class="fa-solid fa-envelope"></i>
-                                    Contact Employer</a
+                                    Kontaktiraj oglašivača</a
                                 >
 
                                 <a
                                     href="{{$listing->website}}"
                                     target="_blank"
                                     class="block bg-black text-white py-2 rounded-xl hover:opacity-80"
-                                    ><i class="fa-solid fa-globe"></i> Visit
-                                    Website</a
+                                    ><i class="fa-solid fa-globe"></i>Posjeti Web stranicu</a
                                 >
                             </div>
                         </div>

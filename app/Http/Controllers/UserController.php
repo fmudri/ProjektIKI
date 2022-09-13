@@ -37,7 +37,7 @@ class UserController extends Controller
         auth()->login($user);
 
         // Redirect
-        return redirect('/')->with('message', 'User created and logged in');
+        return redirect('/')->with('message', 'Korisnik stvoren i prijavljen!');
     }
 
     // Logout User
@@ -48,7 +48,7 @@ class UserController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect('/')->with('message', 'You have been logged out');
+        return redirect('/')->with('message', 'Odjava uspješna!');
     }
 
     // Show Login Form
@@ -67,9 +67,9 @@ class UserController extends Controller
         if(auth()->attempt($formFields)){
             $request->session()->regenerate();
 
-            return redirect('/')->with('message', 'You are now logged in!');
+            return redirect('/')->with('message', 'Prijava uspješna!');
 
         }
-        return back()->withErrors(['email' => 'Invalid Credentials'])->onlyInput('email');
+        return back()->withErrors(['email' => 'Neispravni podatci'])->onlyInput('email');
     }
 }

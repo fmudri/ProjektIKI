@@ -4,7 +4,7 @@
             <h1
                 class="text-3xl text-center font-bold my-6 uppercase"
             >
-                Manage Gigs
+                Upravljanje oglasima
             </h1>
         </header>
 
@@ -29,7 +29,7 @@
                             ><i
                                 class="fa-solid fa-pen-to-square"
                             ></i>
-                            Edit</a
+                            Uredi</a
                         >
                     </td>
                     <td
@@ -45,7 +45,7 @@
                 @endforeach
                 @else
                 <tr class="border-gray-300">
-                    <td class="px-4 py-8 border-t border-b border-gray-300 text-lg"><p class="text-center">No listings found</p></td>
+                    <td class="px-4 py-8 border-t border-b border-gray-300 text-lg"><p class="text-center">Nije pronađen niti jedan oglas...</p></td>
                 </tr>
                 @endunless
             </tbody>

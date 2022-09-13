@@ -2,9 +2,9 @@
 <div class="bg-gray-50 border border-gray-200 p-10 rounded max-w-lg mx-auto mt-24">
     <header class="text-center">
         <h2 class="text-2xl font-bold uppercase mb-1">
-        Create a Gig
+        Stvori oglas
         </h2>
-        <p class="mb-4">Post a gig to find a developer</p>
+        <p class="mb-4">Objavi oglas i pronađi radnika</p>
     </header>
                 {{--Kada god imamo file u formi, mora se dodati enctype--}}
                     <form method="POST" action="/listings" enctype="multipart/form-data">
@@ -14,7 +14,7 @@
                             <label
                                 for="company"
                                 class="inline-block text-lg mb-2"
-                                >Company Name</label
+                                >Naziv tvrtke</label
                             >
                             {{--value old 'company' omogućava da ukoliko dodđe do greške prilikom unosa, tekst ostane zapisan nakon reloada stranice--}}
                             <input
@@ -32,7 +32,7 @@
 
                         <div class="mb-6">
                             <label for="title" class="inline-block text-lg mb-2"
-                                >Job Title</label
+                                >Naziv radnog mjesta</label
                             >
                             <input
                                 type="text"
@@ -49,7 +49,7 @@
                             <label
                                 for="location"
                                 class="inline-block text-lg mb-2"
-                                >Job Location</label
+                                >Mjesto obavljanja posla</label
                             >
                             <input
                                 type="text"
@@ -64,7 +64,7 @@
 
                         <div class="mb-6">
                             <label for="email" class="inline-block text-lg mb-2"
-                                >Contact Email</label
+                                >Kontakt Email</label
                             >
                             <input
                                 type="text"
@@ -81,7 +81,7 @@
                                 for="website"
                                 class="inline-block text-lg mb-2"
                             >
-                                Website/Application URL
+                                Web stranica tvrtke
                             </label>
                             <input
                                 type="text"
@@ -95,7 +95,7 @@
 
                         <div class="mb-6">
                             <label for="tags" class="inline-block text-lg mb-2">
-                                Tags (Comma Separated)
+                                Oznake (Odvojite zarezom)
                             </label>
                             <input
                                 type="text"
@@ -110,7 +110,7 @@
 
                         <div class="mb-6">
                             <label for="logo" class="inline-block text-lg mb-2">
-                                Company Logo
+                                Logo tvrtke
                             </label>
                             <input
                                 type="file"
@@ -127,7 +127,7 @@
                                 for="description"
                                 class="inline-block text-lg mb-2"
                             >
-                                Job Description
+                                Opis posla
                             </label>
                             <textarea
                                 class="border border-gray-200 rounded p-2 w-full"
@@ -144,10 +144,10 @@
                             <button
                                 class="bg-laravel text-white rounded py-2 px-4 hover:bg-black"
                             >
-                                Create Gig
+                                Objavi oglas
                             </button>
 
-                            <a href="/" class="text-black ml-4"> Back </a>
+                            <a href="/" class="text-black ml-4"> Povratak </a>
                         </div>
                     </form>
                 </div>

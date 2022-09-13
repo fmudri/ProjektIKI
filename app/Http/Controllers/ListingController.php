@@ -91,7 +91,7 @@ class ListingController extends Controller
 
         $listing->update($formFields);
 
-        return back()->with('message','Listing created successfully');
+        return back()->with('message','Oglas uspješno postavljen');
     }
 
     //Delete Listing
@@ -103,7 +103,7 @@ class ListingController extends Controller
         }
 
         $listing->delete();
-        return redirect('/')->with('message','Listing deleted successfully');
+        return redirect('/')->with('message','Oglas uspješno izbrisan');
     }
 
     //Manage Listings and pass users listings
